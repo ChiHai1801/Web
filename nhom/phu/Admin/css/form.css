@@ -1,0 +1,578 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+  }
+  .main {
+    background: white;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .form {
+    width: 360px;
+    min-height: 100px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    margin: 24px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+  }
+  .form .heading {
+    font-size: 20px;
+  }
+
+  
+  .form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+  }
+  
+  .form-label,
+  .form-message {
+    text-align: left;
+  }
+  
+  .form-label {
+    font-weight: 700;
+    padding-bottom: 15px;
+    /* line-height: 1.8rem; */
+    font-size: 15px;
+  }
+  
+  .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+  }
+  
+  .form-control:hover {
+    border-color: #1dbfaf;
+  }
+  
+  .form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+  
+  .form-message {
+    font-size: 12px;
+    color: red;
+    font-style: italic;
+    margin-left: 10px;
+  }
+  
+  .form-submit {
+    outline: none;
+    background-color: #1dbfaf;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .form-submit:hover {
+    background-color: #1ac7b6;
+  }
+  
+  .spacer {
+    margin-top: 36px;
+  }
+  
+  /*  pham mo rong*/
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444444;
+  /* font-family: Arial, Helvetica, sans-serif; */
+} 
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 200px 5px 200px;
+  font-size: 14px;
+}
+
+.header .header-left {
+  display: flex;
+}
+
+.header .header-left .header-left-text {
+  margin-left: 20px;
+  color: rgb(163, 106, 0);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header .header-left .header-left-text:hover {
+  color: rgb(163, 106, 0);
+}
+
+.header .header-left .header-left-social{
+  display: flex;
+  color: rgb(163, 106, 0);
+  margin-left: 20px;
+}
+
+.header .header-left .header-left-social .social{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.header .header-right {
+  display: flex;
+}
+
+.header .header-right .header-right-text {
+  margin-left: 20px;
+  color: rgb(163, 106, 0);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header .header-right .header-right-text:hover {
+  color: rgb(163, 106, 0);
+}
+
+
+/* -------------------nav------------------- */
+.nav {
+  display: flex;
+}
+
+.nav .nav-logo {
+  margin-left: 100px;
+}
+
+.nav .nav-logo img {
+  width: 150px;
+  height: 100px;
+}
+
+.nav .nav-search {
+  margin-left: 80px;
+  margin-top: 30px;
+  border: 2px solid gray;
+  width: 850px;
+  height: 46px;
+  border-radius: 5px;
+}
+.nav .nav-search input{
+  width: 750px;
+  height: 40px;
+  text-indent: 10px;
+  border: none;
+}
+
+.nav .nav-search button {
+  height: 42px;
+  width: 90px;
+  border: none;
+  background-color: #e8e3d7;
+  text-align: left;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.nav .nav-search button:hover {
+  background-color: #eae6e6;
+}
+.nav .nav-search button i {
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+.nav .nav-cart {
+  margin-top: 30px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+
+.nav .nav-cart i {
+ font-size: 40px;
+}
+
+      /*--------menu ngang-------*/
+.main {
+  width: 960px;
+  background-color: antiquewhite;
+  margin: 0 410px;
+}
+
+.main ul.main-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main ul.main-menu > li {
+  float: left;
+  height: 50px;
+  position: relative;
+}
+
+.main ul.main-menu > li > a {
+  float: left;
+  display: block;
+  text-decoration: none;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #333;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.main ul.main-menu > li > a:hover {
+  color: rgb(240, 187, 89);
+}
+
+.main ul.main-menu > li:hover ul.main-menusecond{
+  display: block;
+
+}
+
+.main ul.main-menu > li > ul.main-menusecond {
+  width: 250px;
+  background-color: #fff;
+  list-style-type: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+}
+
+.main ul.main-menu > li > ul.main-menusecond > li{
+  position: relative;
+  width: 250px;
+}
+
+.main ul.main-menu > li > ul.main-menusecond > li a {
+  display: block;
+  line-height: 40px;
+  text-decoration: none;
+  color: #333;
+  text-indent: 10px;
+  border-bottom: 2px solid gray;
+  transition: all 0.3s ease;
+}   
+
+.main ul.main-menu > li > ul.main-menusecond > li a:hover {
+  color: rgb(240, 187, 89);
+  text-indent: 20px;
+}
+
+.main ul.main-menu > li > ul.main-menusecond > li:hover ul.main-menuthird {
+  display: block;
+}
+
+.main ul.main-menu > li > ul.main-menusecond > li ul.main-menuthird {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  width: 250px;
+  top: 0;
+  left: 250px;
+  display: none;
+  background-color: #fff;
+}
+
+.main .main-menu .arrow-down {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.main .main-menu .arrow-right1 {
+  font-size: 14px;
+  padding-left: 96px;
+}
+
+.main .main-menu .arrow-right2 {
+  font-size: 14px;
+  padding-left: 123px;
+}
+
+.main .main-menu .arrow-right3 {
+  font-size: 14px;
+  padding-left: 136px;
+}
+
+.main .main-menu .arrow-right4 {
+  font-size: 14px;
+  padding-left: 45px;
+}
+
+.main .main-menu .arrow-right5 {
+  font-size: 14px;
+  padding-left: 94px;
+}
+
+      /*--------menu ngang-------*/
+
+/* -------------------nav------------------- */
+
+
+      /*--------nền-------*/
+.box {
+  background-color: #0e0f0f;
+  color: rgb(14, 13, 13);
+  width: 100%;
+  height:400px;
+  line-height: 250px;
+  text-align: center;
+  font-size: 60px;
+  margin: 50px 0 0 0;
+  background-image: url(https://th.bing.com/th/id/R.e9afdbd57f404efaa31c3bdb6086903b?rik=%2fSjVw6qX6iTd0g&riu=http%3a%2f%2fretaildesignblog.net%2fwp-content%2fuploads%2f2015%2f07%2fLouise-Philippe-Store-by-4D-Bangalore-India-02.jpg&ehk=6Ic4GCZ7DUy6972zJdt7DDFbmw9xieVGoL40xGKMK6k%3d&risl=&pid=ImgRaw&r=0);
+} 
+      /*--------nền-------*/
+
+/* -------------------main------------------- */
+      /* ***bắt đầu menu dọc****/
+.tong {
+  display: flex;
+}
+
+.danhmuc {
+  width: 250px;
+  margin: 20px 0px 10px 20px;
+}
+
+.danhmuc h5{
+  text-align: center;
+  font-size: 18px;
+  color: red;
+}
+
+.danhmuc .dropdonw {
+  width: 250px;
+  margin: 10px 10px 0 20px;
+  padding: 5px o;
+}
+
+.danhmuc .dropdonw li {
+  list-style-type: none;
+  margin-left: 20px;
+  padding: 5px 0;
+}
+
+.danhmuc .dropdonw li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.danhmuc .dropdonw li > ul {
+  padding: 5px 0;
+}
+
+.danhmuc .dropdonw li > ul li a:hover{
+  color: red;
+  text-indent: 5px;
+}
+
+.danhmuc .fas {
+  margin-right: 5px;
+  color: #333;
+}
+
+      /* ***kết thúc menu dọc****/
+
+
+      /* ***bắt đầu sản phẩm****/
+.product{
+  margin: 20px 80px 20px 50px;
+}
+
+.product .container {
+  max-width: 800px;
+  /* margin: 1; */
+}
+
+.product-items {
+  /* background-color: #ddd; */
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid rgb(20, 19, 19);
+}
+
+.product-item {
+  background-color: #eee;
+  width: 230px;
+  text-align: center;
+  margin: 25px 10px 25px 25px;
+  padding: 5px;
+}
+
+
+.product-item img{
+  width: 215px;
+  height: 280px;
+  cursor: pointer;
+}
+
+.product-item button{
+  margin-top: 12px;
+  height: 30px;
+  padding: 0 12px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.product-item button:hover {
+  background-color: rgb(175, 148, 143);
+}
+
+      /* ----------------cart--------------- */
+
+.cart {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.cart h1 {
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100px;
+  height: 130px;
+}
+
+input {
+  width: 40px;
+  outline: none;
+}
+
+.choice {
+  cursor: pointer;
+}
+
+.cart table {
+  width: 100%;
+}
+
+.cart table tr td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.tongtien {
+  font-weight: bold;
+  text-align: right;
+}
+
+.cart button {
+  margin-top: 12px;
+  height: 30px;
+  padding: 0 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+  /* cart nằm bên phải */
+.cart {
+  position: fixed;
+  height: 100vh;
+  width: 400px;
+  right: 0;
+  top: 0;
+  background-color: rgb(236, 217, 217);
+  padding: 12px 20px;
+  overflow-y: scroll; 
+  display: none;
+}
+
+.cart .close-icon {
+  margin-bottom: 20px;
+  text-align: left;
+  border: none;
+}
+
+.cart .close-icon button {
+  background-color: rgb(221, 195, 195);;
+}
+
+.cart .close-icon button:hover {
+  background-color: #ddd;
+  
+}
+
+.cart i {
+  cursor: pointer;
+}
+.footer{
+  text-align: center;
+}
+/* đăng nhập*/
+.main1{
+  justify-content: center
+}
+.chart-layout{
+  margin: 36px auto 0 auto;
+  padding: 32px 0;
+  height: 350px;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.chart-layout__item{
+  width: 150px ;
+  color: #fff;
+  text-align: center;
+  height: var(--percent);
+  background-color: #EF5122;
+  animation: growth ease-in 0.5s;
+}
+@keyframes growth{
+  form {
+    opacity: 0;
+    height:  50%;
+  }
+  to {
+    opacity: 1;
+    height: 100%;
+  }
+}
+.a01{
+  text-align: center;
+  color: red;
+}
+.a{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.A{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: red;
+  justify-items: center;
+}

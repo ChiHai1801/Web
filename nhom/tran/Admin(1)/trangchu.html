@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trang Chu groupSeven</title>
+    <link rel="stylesheet" href="img">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/themify-icons-font/themify-icons/themify-icons.css">
+    <script src="https://kit.fontawesome.com/9d3d21350b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="js/form.js">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Chanel', 11],
+                ['Calvin Klein', 2],
+                ['Hermes', 2],
+                ['Gucci', 7]
+            ]);
+
+            var options = {
+                title: 'Danh Sách Nước Hoa Bán Chạy Nhất'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header-left">
+                <div class="header-left-text">
+                    <span>Kênh youtube</span>
+                </div>
+
+                <div class="header-left-text">
+                    <span>Tải ứng dụng</span>
+                </div>
+
+                <div class="header-left-social">
+                    <p>Kết nối</p>
+                    <span class="social">
+                        <a href="https://vi-vn.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.google.gg/"><i class="fab fa-google"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <div class="header-right-text">
+                    <span>
+                        <i class="far fa-bell"></i>
+                        Thông báo
+                    </span>
+                </div>
+
+                <div class="header-right-text">
+                    <span>
+                        <i class="fas fa-question-circle"></i>
+                        Hỗ trợ
+                    </span>
+                </div>
+
+                <div class="header-right-text">
+                    <span onclick="location.href='index.html'">Đăng nhập</span>
+                </div>
+
+                <div class="header-right-text">
+                    <span onclick="location.href='dangky.html'">Đăng ký</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="nav-logo">
+                <img src="img/logo.png" alt="" width="200px" height="auto">
+            </div>
+
+            <!-- <div class="nav-search">
+                    <input type="text" placeholder="Tìm kiếm ...">
+                    <button> <i class="fas fa-search"></i>Tìm kiếm</button>
+                    <script src="js/test.js"></script>
+                </div>
+    
+                <div class="nav-cart">
+                    <span class="cart-shopping">
+                        <i class="ti-shopping-cart" onclick="hien()"></i>
+                    </span>
+                </div> -->
+        </div>
+    </header>
+    <nav>
+        <div class="main">
+            <ul class="main-menu">
+                <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="#">QUẢN LÝ<i class="arrow-down fas fa-caret-down"></i></a>
+                    <ul class="main-menusecond">
+
+                        <li><a href="quanlydanhsach.html">Danh Sách</a></li>
+                        <li><a href="quanlygiaodien.html"> Giao Diện</a>
+
+                        </li>
+                        <li><a href="quantrikhachhang.html">Khách Hàng/Nhân Viên</a>
+
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li><a href="cauhinhuser.html">CẤU HÌNH</a>
+                </li>
+                <li><a href="#">HOTLINE</a></li>
+            </ul>
+        </div>
+        <br>
+    </nav>
+    <main>
+        <div>
+            <div class="tong">
+                <div class="danhmuc">
+                    <h5>DANH MỤC</h5>
+                    <ul class="dropdonw">
+                        <li><a href="quanlydanhsach.html"><i class="fas fa-chevron-circle-right"></i>Danh Sách Sản
+                                Phẩm</a>
+                        </li>
+
+                        <li><a href="quanlygiadien.html"><i class="fas fa-chevron-circle-right"></i>Giao Diện</a>
+                        </li>
+
+                        <li><a href="quantrikhachhang.html"><i class="fas fa-chevron-circle-right"></i>Khách Hàng/ Nhân
+                                viên</a>
+                        </li>
+
+                        <li><a href="cauhinhuser.html"><i class="fas fa-chevron-circle-right"></i>Cấu Hình</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="chart-layout"
+                style="box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px; box-sizing: inherit; margin-bottom: 10px; padding: 20px; box-sizing: inherit; line-height: 1.6em; padding: 15px;">
+                <div class="chart-layout__item" style="--percent: 10%">10% Tháng 1</div>
+                <div class="chart-layout__item" style="--percent: 20%">20% Tháng 2</div>
+                <div class="chart-layout__item" style="--percent: 40%">40% Tháng 3</div>
+                <div class="chart-layout__item" style="--percent: 15%">15% Tháng 4</div>
+                <div class="chart-layout__item" style="--percent: 50%">50% Tháng 5</div>
+                <div class="chart-layout__item" style="--percent: 80%">80% Tháng 6</div>
+                <div class="chart-layout__item" style="--percent: 20%">20% Tháng 7</div>
+                <div class="chart-layout__item" style="--percent: 30%">30% Tháng 8</div>
+                <div class="chart-layout__item" style="--percent: 90%">90% Tháng 9</div>
+                <div class="chart-layout__item" style="--percent: 80%">80% Tháng 10</div>
+                <div class="chart-layout__item" style="--percent: 100%">100% Tháng 11</div>
+                <div class="chart-layout__item" style="--percent: 100%">100% Tháng 12</div>
+            </div>
+            <br>
+            <div class="a01"><b>
+                    <h3>Doanh Thu Trong Tháng(%GDP Bình Quân)</h2>
+                </b>
+                <div class="a">
+                    <div id="piechart" style="width: 900px; height: 500px;"></div>
+                </div>
+                    <!-- <br>
+                    <div class="A">
+                        <img src="img/chanel/23.webp" alt="" width="10000px" , height="auto">
+                        <img src="img/chanel/05.webp" alt="">
+                        <img src="img/gucci/04.webp" alt=""><img src="img/calvin klein/31.webp" alt=""><img
+                            src="img/hermes/26.webp" alt="">
+                        <img src="img/hermes/28.webp" alt=""> -->
+                        <h1>Ảnh Minh Họa</a></h1>
+                    <!-- </div> -->
+               
+            </div>
+            <div class="A">
+                <img src="img/chanel/23.webp" alt="" width="10000px", height="auto">
+                <img src="img/chanel/05.webp" alt="">
+                <img src="img/gucci/04.webp" alt="">
+                <img src="img/calvin klein/31.webp" alt="">
+                <img src="img/hermes/26.webp" alt="">
+                <img src="img/hermes/28.webp" alt="">
+                <div>
+                <img src="img/calvin klein/01.webp" alt="">
+                <img src="img/calvin klein/02.webp" alt=""><img src="img/chanel/04.webp" alt=""><img src="img/chanel/02.webp" alt=""><img src="img/hermes/15.webp" alt="">
+                </div>
+        </div> 
+    </main>
+</body>
+
+</html>
